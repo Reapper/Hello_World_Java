@@ -2,27 +2,21 @@ public class main
 {
     public static void main(String[] args) 
     {
-        int interger=Integer.parseInt(args[0]);  
-        OddOrPair(interger);
+        float Float = (float) Integer.parseInt(args[0]);  
+        OddOrPair(Float);
     }
 
-    private static void OddOrPair(int Number)
+    private static void OddOrPair(float Number)
     {
-        String Result = null;
-        int varOdd = 1;
-        int varPair = 0;
+        float varResult;
 
-        for(;(Number >= varOdd) | (Number >= varPair);)
-        {
-            if(Number == varOdd) Result = "Is Odd";
-            if(Number == varPair) Result = "Is Pair";
+        varResult = Number / 2;
 
-            varOdd+=2;
-            varPair+=2;            
-        }// END for(;(Number >= varOdd) | (Number >= varPair);)
+        System.out.println(varResult);
+        System.out.println((int) varResult);
         
-        System.out.println(Result);
+        if((int) varResult == varResult) System.out.println("Is Pair");
+        else System.out.println("Is Odd");
+
     }// END private static void OddOrPair(int Number)
-
 }// END public class main 
-
